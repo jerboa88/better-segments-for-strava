@@ -380,7 +380,7 @@ function buildTableHeaders(headerRow) {
  * @param {HTMLTableElement} table - The table to add columns to
  */
 function buildTableCols(rows) {
-	const pageNum = Number(getQueryParam(QUERY_PARAM.pageNum)) ?? 1;
+	const pageNum = Number(getQueryParam(QUERY_PARAM.pageNum) ?? 1);
 	const startIndex = (pageNum - 1) * DEFAULT.itemsPerPage + 1;
 
 	rows.forEach((row, i) => {
