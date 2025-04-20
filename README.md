@@ -1,13 +1,13 @@
 <!-- Project Header -->
 <div align="center">
-  <img class="projectLogo" src="logo.svg" alt="Project logo" title="Project logo" width="512">
+  <img class="projectLogo" src="logo.svg" alt="Project logo" title="Project logo" width="256">
 
   <h1 class="projectName">Better Segments for Strava</h1>
 
   <p class="projectBadges">
     <img src="https://johng.io/badges/category/Script.svg" alt="Project type" title="Project type">
     <img src="https://img.shields.io/github/languages/top/jerboa88/better-segments-for-strava.svg" alt="Language" title="Language">
-    <img src="https://img.shields.io/github/repo-size/jerboa88/better-segments-for-stravasvg" alt="Repository size" title="Repository size">
+    <img src="https://img.shields.io/github/repo-size/jerboa88/better-segments-for-strava.svg" alt="Repository size" title="Repository size">
     <a href="LICENSE">
       <img src="https://img.shields.io/github/license/jerboa88/better-segments-for-strava.svg" alt="Project license" title="Project license"/>
     </a>
@@ -33,6 +33,10 @@ Hunting for [Strava] crowns? This script may help. It runs in your browser and a
   - **Absolute difference**: View the difference between your time and the segment record in seconds
   - **Relative difference**: View the difference between your time and the segment record as a percentage
 
+### Screenshots
+| ![Screenshot of the starred segments page with the script running](screenshot.png) |
+| ---------------------------------------------------------------------------------- |
+| _Starred segments page ([strava.com/athlete/segments/starred]) - v0.1.1_           |
 
 
 ## Installation
