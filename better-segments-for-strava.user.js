@@ -1,10 +1,14 @@
 // ==UserScript==
-// @name        Better Segments for Strava
-// @namespace   Violentmonkey Scripts
-// @match       https://www.strava.com/athlete/segments/starred*
-// @grant       none
-// @version     0.1.1
-// @description Adds sortable columns with custom parsing and index tracking
+// @name         Better Segments for Strava
+// @namespace    https://github.com/jerboa88
+// @version      0.1.1
+// @description  A userscript for Strava that adds additional stats and features to the starred segments page.
+// @logo         logo.svg
+// @author       John Goodliff (jerboa88)
+// @license      MIT
+// @supportURL   https://github.com/jerboa88/better-segments-for-strava/issues
+// @homepageURL  https://johng.io/p/better-segments-for-strava
+// @match        https://www.strava.com/athlete/segments/starred*
 // ==/UserScript==
 
 // Constants/config
