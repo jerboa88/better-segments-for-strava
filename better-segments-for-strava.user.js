@@ -3,34 +3,34 @@
 // @namespace   Violentmonkey Scripts
 // @match       https://www.strava.com/athlete/segments/starred*
 // @grant       none
-// @version     0.1
+// @version     0.1.1
 // @description Adds sortable columns with custom parsing and index tracking
 // ==/UserScript==
 
 // Constants/config
 
 const MSG = {
-	rowNum: "#",
-	recordDiffSeconds: "PR Diff Time",
-	recordDiffPercent: "PR Diff %",
-	gender: "Compare with Gender",
-	itemsPerPage: "Items per Page",
-	genderAny: "Any",
-	genderMen: "Men",
-	genderWomen: "Women",
-	kilometersSuffix: "km",
-	milesSuffix: "mi",
-	feetSuffix: "ft",
-	metersSuffix: "m",
-	percentSuffix: "%",
-	secondsSuffix: "s",
-	plusPrefix: "+",
-	minusPrefix: "-",
-	placeholderValue: "—",
+	rowNum: '#',
+	recordDiffSeconds: 'PR Diff Time',
+	recordDiffPercent: 'PR Diff %',
+	gender: 'Compare with Gender',
+	itemsPerPage: 'Items per Page',
+	genderAny: 'Any',
+	genderMen: 'Men',
+	genderWomen: 'Women',
+	kilometersSuffix: 'km',
+	milesSuffix: 'mi',
+	feetSuffix: 'ft',
+	metersSuffix: 'm',
+	percentSuffix: '%',
+	secondsSuffix: 's',
+	plusPrefix: '+',
+	minusPrefix: '-',
+	placeholderValue: '—',
 };
 const SORT_INDICATOR = {
-	1: " ▲",
-	"-1": " ▼",
+	1: ' ▲',
+	'-1': ' ▼',
 };
 const ITEMS_PER_PAGE = [20, 50, 100, 200];
 const GENDER = {
@@ -39,8 +39,8 @@ const GENDER = {
 	women: MSG.genderWomen,
 };
 const QUERY_PARAM = {
-	itemsPerPage: "per_page",
-	pageNum: "page",
+	itemsPerPage: 'per_page',
+	pageNum: 'page',
 };
 
 const COL_INDEX = {
@@ -112,7 +112,7 @@ const DEFAULT = {
 // Runtime vars
 
 const sortIndicatorRegex = RegExp(
-	` [${Object.values(SORT_INDICATOR).join("")}]$`,
+	` [${Object.values(SORT_INDICATOR).join('')}]$`,
 );
 const state = {
 	gender: DEFAULT.gender,
@@ -148,7 +148,7 @@ function formatTimeDiff(secondsDiff) {
 	if (absSecondsDiff < 60) return `${absSecondsDiff}${MSG.secondsSuffix}`;
 
 	const minutes = Math.floor(absSecondsDiff / 60);
-	const secondsString = String(absSecondsDiff % 60).padStart(2, "0");
+	const secondsString = String(absSecondsDiff % 60).padStart(2, '0');
 
 	return `${minutes}:${secondsString}`;
 }
@@ -159,7 +159,7 @@ function formatTimeDiff(secondsDiff) {
  * @returns {string} - "+" for positive, "-" for negative, "" for zero
  */
 function getSignFor(number) {
-	return number < 0 ? MSG.minusPrefix : number > 0 ? MSG.plusPrefix : "";
+	return number < 0 ? MSG.minusPrefix : number > 0 ? MSG.plusPrefix : '';
 }
 
 /**
@@ -193,12 +193,12 @@ function getColorFor(value) {
 function parseDuration(durationString) {
 	if (durationString === MSG.placeholderValue) return null;
 
-	if (durationString.includes(":")) {
-		const [min, sec] = durationString.split(":").map(Number);
+	if (durationString.includes(':')) {
+		const [min, sec] = durationString.split(':').map(Number);
 		return min * 60 + sec;
 	}
 
-	if (durationString.endsWith("s")) {
+	if (durationString.endsWith('s')) {
 		return Number.parseInt(durationString);
 	}
 
@@ -247,10 +247,10 @@ function parseText(textString) {
  * @returns {HTMLTableCellElement} - The created table header cell
  */
 function createCol(colIndex) {
-	const colHeader = document.createElement("th");
+	const colHeader = document.createElement('th');
 
 	colHeader.textContent = COLS[colIndex].title;
-	colHeader.style.cursor = "pointer";
+	colHeader.style.cursor = 'pointer';
 
 	return colHeader;
 }
@@ -265,37 +265,37 @@ function createCol(colIndex) {
  */
 function createSelector(title, optionNames, defaultOptionName, onChange) {
 	const fragment = document.createDocumentFragment();
-	const wrapperDiv = document.createElement("div");
+	const wrapperDiv = document.createElement('div');
 
-	wrapperDiv.className = "edit-js editable-setting editing inset";
-	wrapperDiv.style.background = "#f7f7fa";
-	wrapperDiv.style.borderTop = "1px solid #f0f0f5";
-	wrapperDiv.style.borderBottom = "1px solid #f0f0f5";
-	wrapperDiv.style.marginTop = "20px";
-	wrapperDiv.style.marginBottom = "-1px";
+	wrapperDiv.className = 'edit-js editable-setting editing inset';
+	wrapperDiv.style.background = '#f7f7fa';
+	wrapperDiv.style.borderTop = '1px solid #f0f0f5';
+	wrapperDiv.style.borderBottom = '1px solid #f0f0f5';
+	wrapperDiv.style.marginTop = '20px';
+	wrapperDiv.style.marginBottom = '-1px';
 
-	const form = document.createElement("form");
+	const form = document.createElement('form');
 
 	form.noValidate = true;
 
-	const labelDiv = document.createElement("div");
+	const labelDiv = document.createElement('div');
 
-	labelDiv.className = "setting-label";
+	labelDiv.className = 'setting-label';
 	labelDiv.textContent = title;
-	labelDiv.style.color = "#494950";
-	labelDiv.style.position = "relative";
+	labelDiv.style.color = '#494950';
+	labelDiv.style.position = 'relative';
 
-	const valueDiv = document.createElement("div");
+	const valueDiv = document.createElement('div');
 
-	valueDiv.className = "setting-value";
-	valueDiv.style.marginTop = "6px";
+	valueDiv.className = 'setting-value';
+	valueDiv.style.marginTop = '6px';
 
-	const select = document.createElement("select");
+	const select = document.createElement('select');
 
-	select.className = "valid";
+	select.className = 'valid';
 
 	for (const optionName of optionNames) {
-		const option = document.createElement("option");
+		const option = document.createElement('option');
 
 		option.value = optionName;
 		option.textContent = optionName;
@@ -304,7 +304,7 @@ function createSelector(title, optionNames, defaultOptionName, onChange) {
 		select.appendChild(option);
 	}
 
-	select.addEventListener("change", onChange);
+	select.addEventListener('change', onChange);
 
 	valueDiv.appendChild(select);
 	form.appendChild(labelDiv);
@@ -322,7 +322,7 @@ function createSelector(title, optionNames, defaultOptionName, onChange) {
 function buildTableOptions(table) {
 	const tableParent = assertExists(
 		table.parentElement,
-		"Table parent not found.",
+		'Table parent not found.',
 	);
 	const currentItemsPerPage =
 		Number(getQueryParam(QUERY_PARAM.itemsPerPage)) ?? DEFAULT.itemsPerPage;
@@ -370,8 +370,8 @@ function buildTableHeaders(headerRow) {
 
 	// Enable sorting on all headers
 	[...headerRow.children].forEach((th, i) => {
-		th.style.cursor = "pointer";
-		th.addEventListener("click", () => sortTableByCol(i, true));
+		th.style.cursor = 'pointer';
+		th.addEventListener('click', () => sortTableByCol(i, true));
 	});
 }
 
@@ -399,14 +399,14 @@ function buildTableCols(rows) {
  */
 function buildTable() {
 	const table = assertExists(
-		document.querySelector("table.starred-segments"),
-		"Table not found.",
+		document.querySelector('table.starred-segments'),
+		'Table not found.',
 	);
 	const headerRow = assertExists(
-		table.querySelector("thead tr"),
-		"Table header row not found.",
+		table.querySelector('thead tr'),
+		'Table header row not found.',
 	);
-	const rows = [...table.querySelectorAll("tbody tr")];
+	const rows = [...table.querySelectorAll('tbody tr')];
 
 	buildTableOptions(table);
 	buildTableHeaders(headerRow);
@@ -424,9 +424,9 @@ function updateTable() {
 	for (const row of rows) {
 		const cells = row.children;
 		const [menRecordSeconds, womenRecordSeconds, myRecordSeconds] = [
-			"menRecord",
-			"womenRecord",
-			"myRecord",
+			'menRecord',
+			'womenRecord',
+			'myRecord',
 		].map((key) => parseDuration(cells[COL_INDEX[key]].textContent.trim()));
 
 		let recordSeconds = menRecordSeconds;
@@ -455,8 +455,8 @@ function updateTable() {
 		} else {
 			recordDiffSecondsCell.textContent = MSG.placeholderValue;
 			recordDiffPercentageCell.textContent = MSG.placeholderValue;
-			recordDiffSecondsCell.style.color = "";
-			recordDiffPercentageCell.style.color = "";
+			recordDiffSecondsCell.style.color = '';
+			recordDiffPercentageCell.style.color = '';
 		}
 	}
 }
@@ -490,7 +490,7 @@ function sortTableByCol(
 				Number.POSITIVE_INFINITY,
 		);
 
-		if (typeof valA === "number" && typeof valB === "number") {
+		if (typeof valA === 'number' && typeof valB === 'number') {
 			return (valA - valB) * direction;
 		}
 
@@ -498,14 +498,14 @@ function sortTableByCol(
 	});
 
 	[...headerRow.children].forEach((th, i) => {
-		th.innerHTML = th.innerHTML.replace(sortIndicatorRegex, "");
+		th.innerHTML = th.innerHTML.replace(sortIndicatorRegex, '');
 
 		if (i === colIndex) {
 			th.innerHTML += SORT_INDICATOR[direction];
 		}
 	});
 
-	const tbody = table.querySelector("tbody");
+	const tbody = table.querySelector('tbody');
 
 	for (const row of rows) {
 		tbody.appendChild(row);
