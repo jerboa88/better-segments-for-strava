@@ -1,0 +1,11 @@
+{
+	"$schema": "https://johng.io/schema/project-metadata.json",
+	"name": "Better Segments for Strava",
+	"category": "Script",
+	"subcategory": "User",
+	"schema": {
+		"type": "Software",
+		"applicationCategory": "Sports",
+		"operatingSystem": "Any"
+	}
+}
