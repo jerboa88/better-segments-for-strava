@@ -5,7 +5,7 @@
   <h1 class="projectName">Better Segments for Strava</h1>
 
   <p class="projectBadges">
-    <img src="https://johng.io/badges/category/Script.svg" alt="Project type" title="Project type">
+    <img src="https://johng.io/badges/category/Script.svg" alt="Project category" title="Project category">
     <img src="https://img.shields.io/github/languages/top/jerboa88/better-segments-for-strava.svg" alt="Language" title="Language">
     <img src="https://img.shields.io/github/repo-size/jerboa88/better-segments-for-strava.svg" alt="Repository size" title="Repository size">
     <a href="LICENSE">
