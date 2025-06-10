@@ -25,13 +25,13 @@
 Hunting for [Strava] crowns? This script may help. It runs in your browser and adds additional stats and features to the [starred segments page] on Strava to help you find segments that you already hold a competitive time on.
 
 ### Features
-- **📄 Configurable # of items per page**: Increase the number of segments shown per page from the default 20 up to 200
-- **🚻 Configurable gender for comparison**: Compare your PR against the segment record for men, women, or the fastest time overall
-- **↕️ Sortable columns**: Sort the table by any column in ascending or descending order
-- **🎨 Color-coded values**: Differences between your time and the segment record are color-coded to help you quickly identify segments where you hold a competitive time
 - **➕ Additional columns**:
   - **Absolute difference**: View the difference between your time and the segment record in seconds
   - **Relative difference**: View the difference between your time and the segment record as a percentage
+- **↕️ Sortable columns**: Sort the table by any column in ascending or descending order
+- **🎨 Color-coded values**: Differences between your time and the segment record are color-coded to help you quickly identify segments where you hold a competitive time
+- **📄 Configurable # of items per page**: Increase the number of segments shown per page from the default 20 all the way up to 2000
+- **🚻 Configurable gender for comparison**: Compare your PR against the segment record for men, women, or the fastest time overall
 
 ### Screenshots
 | ![Screenshot of the starred segments page with the script running](screenshot.png) |

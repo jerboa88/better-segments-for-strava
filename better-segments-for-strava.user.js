@@ -11,6 +11,8 @@
 // @match        https://www.strava.com/athlete/segments/starred*
 // ==/UserScript==
 
+// @ts-check
+
 // Constants/config
 
 const MSG = {
@@ -36,7 +38,7 @@ const SORT_INDICATOR = {
 	1: ' ▲',
 	'-1': ' ▼',
 };
-const ITEMS_PER_PAGE = [20, 50, 100, 200];
+const ITEMS_PER_PAGE = [20, 50, 100, 200, 500, 1000, 2000];
 const GENDER = {
 	any: MSG.genderAny,
 	men: MSG.genderMen,
