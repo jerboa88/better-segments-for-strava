@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Better Segments for Strava
 // @namespace    https://github.com/jerboa88
-// @version      0.1.1
+// @version      0.2.1
 // @description  A userscript for Strava that adds additional stats and features to the starred segments page.
 // @logo         logo.svg
 // @author       John Goodliff (jerboa88)
