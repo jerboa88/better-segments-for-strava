@@ -120,6 +120,10 @@ licensed under [Apache License 2.0]. I have added start and end points to the li
 This project is not affiliated with or endorsed by Strava in any way.
 
 
+## 🖇️ Related
+
+- **[Komodo - Mods for Komoot](https://github.com/jerboa88/komodo)** - A userscript for Komoot that adds additional features for route planning.
+
 ## 💕 Funding
 
 Find this project useful? [Sponsoring me](https://johng.io/funding) will help me cover costs and **_commit_** more time to open-source.
