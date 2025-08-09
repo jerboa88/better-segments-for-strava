@@ -1,6 +1,7 @@
 {
 	"$schema": "https://johng.io/schema/project-metadata.json",
 	"name": "Better Segments for Strava",
+	"logoPath": "src/logo.svg",
 	"category": "Script",
 	"subcategory": "User",
 	"schema": {

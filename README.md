@@ -1,6 +1,6 @@
 <!-- Project Header -->
 <div align="center">
-  <img class="projectLogo" src="logo.svg" alt="Project logo" title="Project logo" width="256">
+  <img class="projectLogo" src="src/logo.svg" alt="Project logo" title="Project logo" width="256">
 
   <h1 class="projectName">Better Segments for Strava</h1>
 
@@ -41,7 +41,7 @@ Hunting for [Strava](https://strava.com) crowns? This script may help. It runs i
 
 ### Screenshots
 
-| ![Screenshot of the starred segments page with the script running](screenshot.png) |
+| ![Screenshot of the starred segments page with the script running](examples/screenshot.png) |
 | ---------------------------------------------------------------------------------- |
 | _Starred segments page ([strava.com/athlete/segments/starred]) - v0.1.1_           |
 
@@ -65,14 +65,14 @@ Once installed, you can click the button below to install the latest version of 
 > [!NOTE]
 > This only works once. If the page gets reloaded (ex. by changing the # of items per page) or you navigate away and come back, you will have to run the script again. If you want to run the script automatically, I suggest using a userscript manager.
 
-Alternatively, you can run the script by going to [strava.com/athlete/segments/starred], copying the code in [better-segments-for-strava.user.js](dist/better-segments-for-strava.user.js), and pasting it into your browser's devtools console.
+Alternatively, you can run the script by going to [strava.com/athlete/segments/starred], copying the code in [dist/better-segments-for-strava.user.js](dist/better-segments-for-strava.user.js), and pasting it into your browser's devtools console.
 
 <details>
   <summary><b>Detailed instructions:</b></summary>
   <ol>
     <li>Open <a href="https://www.strava.com/athlete/segments/starred">strava.com/athlete/segments/starred</a> in your browser</li>
     <li>Open your browser's devtools console (<a href="https://balsamiq.com/support/faqs/browserconsole/">how?</a>)</li>
-    <li>Copy the code in <a href="better-segments-for-strava.user.js">better-segments-for-strava.user.js</a> and paste it into the console. If this doesn't work or you see a warning message about pasting, see the <a href="#FAQ">FAQ</a>.</li>
+    <li>Copy the code in <a href="dist/better-segments-for-strava.user.js">dist/better-segments-for-strava.user.js</a> and paste it into the console. If this doesn't work or you see a warning message about pasting, see the <a href="#FAQ">FAQ</a>.</li>
     <li>Press enter to run the script. You should see the page update. If this doesn't happen, see the <a href="#FAQ">FAQ</a>.</li>
   </ol>
 </details>
