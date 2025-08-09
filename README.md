@@ -4,12 +4,17 @@
 
   <h1 class="projectName">Better Segments for Strava</h1>
 
-  <p class="projectBadges">
+  <p class="projectBadges info">
     <img src="https://johng.io/badges/category/Script.svg" alt="Project category" title="Project category">
     <img src="https://img.shields.io/github/languages/top/jerboa88/better-segments-for-strava.svg" alt="Language" title="Language">
     <img src="https://img.shields.io/github/repo-size/jerboa88/better-segments-for-strava.svg" alt="Repository size" title="Repository size">
     <a href="LICENSE">
       <img src="https://img.shields.io/github/license/jerboa88/better-segments-for-strava.svg" alt="Project license" title="Project license"/>
+    </a>
+  </p>
+  <p class="projectBadges status">
+    <a href="https://github.com/jerboa88/better-segments-for-strava/raw/refs/heads/main/better-segments-for-strava.user.js">
+     <img src="https://img.shields.io/badge/%F0%9F%A7%A9_Install-better--segments--for--strava.user.js-blue" alt="Install" title="Install"/>
     </a>
   </p>
 
