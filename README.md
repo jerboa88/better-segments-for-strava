@@ -21,7 +21,7 @@
 </div>
 
 
-## About
+## 👋 About
 Hunting for [Strava] crowns? This script may help. It runs in your browser and adds additional stats and features to the [starred segments page] on Strava to help you find segments that you already hold a competitive time on.
 
 ### Features
@@ -39,7 +39,7 @@ Hunting for [Strava] crowns? This script may help. It runs in your browser and a
 | _Starred segments page ([strava.com/athlete/segments/starred]) - v0.1.1_           |
 
 
-## Installation
+## 📦 Installation
 > [!CAUTION]
 > For security reasons, I do not recommend running scripts from the internet unless you understand what they are doing. If you are not a developer, I recommend reading the comments in the code and/or asking a LLM like [ChatGPT] or [Claude] to explain it to you.
 
@@ -68,7 +68,7 @@ Alternatively, you can run the script by going to [strava.com/athlete/segments/s
 </details>
 
 
-## Usage
+## 🕹️ Usage
 This script only works on the starred segments page, so you will need to star segments that you want to track.
 
 ### Setting the number of items per page
@@ -90,7 +90,7 @@ Differences between your time and the record time are color coded, with warmer c
 | <0% (ahead of leader) | 0% (leader) | >0% (behind leader) |
 
 
-## FAQ
+## ❓ FAQ
 
 ### Nothing shows up when I paste in the console / I get a warning when I try to paste in the console
 Some browsers prevent you from pasting code in the console because it could be malicious. This is called Paste Protection and you can read more about it on the [Chrome for Developers Blog].
@@ -105,13 +105,13 @@ If this happens, follow the instructions in the console to re-enable pasting, an
 Make sure that you select the entire file with <kbd>Ctrl</kbd> + <kbd>A</kbd> when copying it. If part of the script is cut off, it won't work.
 
 
-## Contributing
+## 🤝 Contributing
 If you encounter any problems with the script, feel free to [create an issue].
 
 Pull requests, bug reports, translations, and other kinds of contributions are greatly appreciated. By contributing code, you agree to license your contributions under the terms of the [LICENSE].
 
 
-## License
+## 🧾 License
 This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
 
 The project logo is based on [vip-crown-line] by [Remix Icon],
