@@ -54,7 +54,7 @@ I recommend using this script with a userscript manager because it will keep the
 
 ### Using a userscript manager
 
-A userscript manager is a browser extension that allows you to organize and run scripts on websites. If you don't already have one, I would recommend [Violentmonkey](https://violentmonkey.github.io/), [Tampermonkey](https://www.tampermonkey.net/index.php), or [Greasemonkey](https://github.com/greasemonkey/greasemonkey). For more choices, see [this comparison table](https://github.com/awesome-scripts/awesome-userscripts?tab=readme-ov-file#compatibility).
+A userscript manager is a browser extension that allows you to organize and run scripts on websites. If you don't already have one, I would recommend [Violentmonkey](https://violentmonkey.github.io/), [Tampermonkey](https://www.tampermonkey.net/index.php), [ScriptCat](https://docs.scriptcat.org/), or [Greasemonkey](https://github.com/greasemonkey/greasemonkey). For more choices, see [this comparison table](https://github.com/awesome-scripts/awesome-userscripts?tab=readme-ov-file#compatibility).
 
 Once installed, you can click the button below to install the latest version of the script:
 
