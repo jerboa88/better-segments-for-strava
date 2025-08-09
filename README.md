@@ -11,8 +11,14 @@
     <a href="LICENSE">
       <img src="https://img.shields.io/github/license/jerboa88/better-segments-for-strava.svg" alt="Project license" title="Project license"/>
     </a>
+    <a href="https://github.com/semantic-release/semantic-release">
+      <img src="https://img.shields.io/badge/semantic--release-conventionalcommits-e10079?logo=semantic-release" alt="Semantic Release" title="Semantic Release"/>
+    </a>
   </p>
   <p class="projectBadges status">
+    <a href="https://github.com/jerboa88/better-segments-for-strava/releases/latest">
+      <img src="https://img.shields.io/github/v/release/jerboa88/better-segments-for-strava.svg" alt="Latest release" title="Latest release"/>
+    </a>
     <a href="https://github.com/jerboa88/better-segments-for-strava/raw/refs/heads/main/better-segments-for-strava.user.js">
      <img src="https://img.shields.io/badge/%F0%9F%A7%A9_Install-better--segments--for--strava.user.js-blue" alt="Install" title="Install"/>
     </a>
@@ -59,6 +65,8 @@ A userscript manager is a browser extension that allows you to organize and run 
 Once installed, you can click the button below to install the latest version of the script:
 
 [![Install](https://img.shields.io/badge/%F0%9F%A7%A9_Install-better--segments--for--strava.user.js-blue)](https://github.com/jerboa88/better-segments-for-strava/raw/refs/heads/main/better-segments-for-strava.user.js)
+
+You can also install a specific version of the script on the [releases page](https://github.com/jerboa88/better-segments-for-strava/releases).
 
 ### Manually
 >
