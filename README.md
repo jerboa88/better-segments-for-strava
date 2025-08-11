@@ -19,6 +19,9 @@
     <a href="https://github.com/jerboa88/better-segments-for-strava/releases/latest">
       <img src="https://img.shields.io/github/v/release/jerboa88/better-segments-for-strava.svg" alt="Latest release" title="Latest release"/>
     </a>
+    <a href="https://greasyfork.org/en/scripts/545360-better-segments-for-strava">
+      <img src="https://img.shields.io/greasyfork/v/545360-better-segments-for-strava?color=%23990000" alt="Greasy Fork Version"/>
+    </a>
     <a href="https://github.com/jerboa88/better-segments-for-strava/raw/refs/heads/main/dist/better-segments-for-strava.user.js">
      <img src="https://img.shields.io/badge/%F0%9F%A7%A9_Install-better--segments--for--strava.user.js-blue" alt="Install" title="Install"/>
     </a>
